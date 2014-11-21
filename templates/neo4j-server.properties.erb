@@ -18,9 +18,9 @@ org.neo4j.server.webserver.address=<%= @ipaddress %>
 <% end -%>
 
 # http port (for all data, administrative, and UI access)
-org.neo4j.server.webserver.port=7474
+org.neo4j.server.webserver.port=<%= @port_number %>
 org.neo4j.server.webserver.https.enabled=true
-org.neo4j.server.webserver.https.port=7473
+org.neo4j.server.webserver.https.port=<%= @https_port_number %>
 org.neo4j.server.webserver.https.cert.location=conf/ssl/snakeoil.cert
 org.neo4j.server.webserver.https.key.location=conf/ssl/snakeoil.key
 
