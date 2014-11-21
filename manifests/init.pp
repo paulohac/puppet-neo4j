@@ -37,7 +37,11 @@ class neo4j (
   $allow_remote_connections = true,
   $jvm_init_memory = '1024',
   $jvm_max_memory = '1024',
-
+  #mychanges
+  $port_number = undef,
+  $https_port_number = undef,
+  
+  
   # file buffer cache options
   $nodestore_memory = undef,
   $relationshipstore_memory = undef,
